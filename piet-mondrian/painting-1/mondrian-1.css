@@ -1,0 +1,170 @@
+/*
+==========================
+Author: Helena Maruf
+Linked to: mondrian-1.html
+==========================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+======================
+Main code
+======================
+*/
+
+:root {
+	--black: #000;
+	--white: #fff;
+	--blue: #3c4681;
+	--red: #d42627;
+	--yellow: #fcd202;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--black);
+}
+
+.container {
+	display: grid;
+}
+
+.painting {
+	width: 100vw;
+	height: 100vh;
+	gap: 10px;
+	grid-template: repeat(10, 1fr) / repeat(13, 1fr);
+	grid-template-areas: 
+		'block-1 block-1 block-1 block-1 block-1 block-2 block-2 block-2 block-2 block-2 block-2 block-3 block-3'
+	 	
+		'block-1 block-1 block-1 block-1 block-1 block-6 block-6 block-6 block-6 block-7 block-7 block-3 block-3'
+		
+		'block-4 block-4 block-4 block-4 block-5 block-6 block-6 block-6 block-6 block-7 block-7 block-3 block-3'
+
+		'block-4 block-4 block-4 block-4 block-5 block-6 block-6 block-6 block-6 block-7 block-7 block-3 block-3'
+
+		'block-4 block-4 block-4 block-4 block-5 block-6 block-6 block-6 block-6 block-7 block-7 block-3 block-3'
+
+		'block-4 block-4 block-4 block-4 block-5 block-6 block-6 block-6 block-6 block-7 block-7 block-3 block-3'
+
+		'block-4 block-4 block-4 block-4 block-8 block-8 block-9 block-9 block-9 block-9 block-9 block-3 block-3'
+
+		'block-4 block-4 block-4 block-4 block-8 block-8 block-9 block-9 block-9 block-9 block-9 block-3 block-3'
+
+		'block-4 block-4 block-4 block-4 block-8 block-8 block-11 block-11 block-11 block-11 block-12 block-12 block-12'
+
+		'block-10 block-10 block-10 block-10 block-10 block-10 block-11 block-11 block-11 block-11 block-12 block-12 block-12';
+}
+
+.item-1 {
+	grid-area: block-1;
+	background: var(--blue);
+}
+
+.item-2 {
+	grid-area: block-2;
+	background: var(--red);
+}
+
+.item-3 {
+	grid-area: block-3;
+	background: var(--white);
+}
+
+.item-4 {
+	grid-area: block-4;
+	background: var(--white);
+}
+
+.item-5 {
+	grid-area: block-5;
+	background: var(--white);
+}
+
+.item-6 {
+	grid-area: block-6;
+	background: var(--yellow);
+}
+
+.item-7 {
+	grid-area: block-7;
+	background: var(--white);
+}
+
+.item-8 {
+	grid-area: block-8;
+	background: var(--blue);
+}
+
+.item-9 {
+	grid-area: block-9;
+	background: var(--red);
+}
+
+.item-10 {
+	grid-area: block-10;
+	background: var(--yellow);
+}
+
+.item-11 {
+	grid-area: block-11;
+	background: var(--white);
+}
+
+.item-12 {
+	grid-area: block-12;
+	background: var(--blue);
+}
