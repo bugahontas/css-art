@@ -4,19 +4,20 @@
 
 ## ✨ Description
 
-A collection of **creative artworks** made with **HTML5** and **CSS3**.
+A collection of my **creative artworks** made with **HTML5** and **CSS3**.
 
 ## ✨ Who is this repository for?
 
 For everyone who wants to:
 
-✅ Learn about HTML and CSS;
+🔹 Learn about HTML and CSS;
 
-✅ Appreciate CSS in an artistic way;
+🔹 Appreciate CSS in an artistic way;
 
-✅ Get inspiration for your own front-end works! 😁
+🔹 Get inspiration for your own front-end works! 😁
 
 ## ✨ Menu of contents
+
 - ![Artworks based on Piet Mondrian's paintings](https://github.com/bugahontas/css-art/tree/main/piet-mondrian)
 - ![Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
 - ![Tetris snapshot-like](https://github.com/bugahontas/css-art/tree/main/tetris) 
@@ -24,3 +25,15 @@ For everyone who wants to:
 ## ✨ Technologies and tools
 - ![HTML5](https://dev.w3.org/html5/html-author/)
 - ![CSS3](https://www.w3.org/Style/CSS/)
+
+## ✨ Contributions
+
+⚠ As this repository is my portfolio, **I'm not accepting pull requests here** at the moment. However, if you have any doubts or suggestions, please **open an issue** and let's talk!   
+
+## ✨ How to reach me
+
+[![Github badge](https://img.shields.io/badge/bugahontas-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/bugahontas) [![Gmail badge](https://img.shields.io/badge/contatohelmaqui@gmail.com-c5221f?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contatohelmaqui@gmail.com)
+
+## ✨ License
+
+![GNU General Public License v3.0](https://github.com/bugahontas/css-art/blob/main/LICENSE)
