@@ -1,4 +1,4 @@
-# 🎨 [CSS Art](https://github.com/bugahontas/css-art) / [Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
+# 🎨 [CSS Art](https://github.com/bugahontas/css-art) / Rubik's cubes
 
 ## ✨ Preview
 
