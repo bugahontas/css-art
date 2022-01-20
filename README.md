@@ -18,13 +18,13 @@ For everyone who wants to:
 
 ## ✨ Menu of contents
 
-- ![Artworks based on Piet Mondrian's paintings](https://github.com/bugahontas/css-art/tree/main/piet-mondrian)
-- ![Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
-- ![Tetris snapshot-like](https://github.com/bugahontas/css-art/tree/main/tetris) 
+- [Artworks based on Piet Mondrian's paintings](https://github.com/bugahontas/css-art/tree/main/piet-mondrian)
+- [Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
+- [Tetris snapshot-like](https://github.com/bugahontas/css-art/tree/main/tetris) 
 
 ## ✨ Technologies and tools
-- ![HTML5](https://dev.w3.org/html5/html-author/)
-- ![CSS3](https://www.w3.org/Style/CSS/)
+
+[![HTML5 badge](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://dev.w3.org/html5/html-author/) [![CSS3 badge](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://www.w3.org/Style/CSS/)
 
 ## ✨ Contributions
 
@@ -36,4 +36,4 @@ For everyone who wants to:
 
 ## ✨ License
 
-![GNU General Public License v3.0](https://github.com/bugahontas/css-art/blob/main/LICENSE)
+[GNU General Public License v3.0](https://github.com/bugahontas/css-art/blob/main/LICENSE)
