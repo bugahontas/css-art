@@ -1,6 +1,6 @@
 # 🎨 CSS Art
 
-[![GitHub license](https://img.shields.io/github/license/bugahontas/css-art?style=for-the-badge)](https://github.com/bugahontas/css-art/blob/main/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/bugahontas/css-art?style=for-the-badge)](https://github.com/bugahontas/css-art/stargazers) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/bugahontas/css-art?style=for-the-badge) ![GitHub issues](https://img.shields.io/github/issues/bugahontas/css-art?style=for-the-badge)
+[![GitHub license](https://img.shields.io/github/license/bugahontas/css-art?style=for-the-badge)](https://github.com/bugahontas/css-art/blob/main/LICENSE) [![GitHub stars](https://img.shields.io/github/stars/bugahontas/css-art?style=for-the-badge)](https://github.com/bugahontas/css-art/stargazers) ![Repo status](https://img.shields.io/static/v1?label=Status&message=Commits%20every%20month&color=blueviolet&style=for-the-badge) ![GitHub commit activity](https://img.shields.io/github/commit-activity/m/bugahontas/css-art?style=for-the-badge) ![GitHub issues](https://img.shields.io/github/issues/bugahontas/css-art?style=for-the-badge)
 
 ## ✨ Description
 
