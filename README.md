@@ -19,6 +19,7 @@ For everyone who wants to:
 ## ✨ Menu of contents
 
 - [Artworks based on Piet Mondrian's paintings](https://github.com/bugahontas/css-art/tree/main/piet-mondrian)
+- [Coffee Break](https://github.com/bugahontas/css-art/tree/main/coffee-break) 
 - [Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
 - [Tetris snapshot-like](https://github.com/bugahontas/css-art/tree/main/tetris) 
 
