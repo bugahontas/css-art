@@ -1,9 +1,16 @@
+/*
+=============================
+Author: Helena Maruf
+Linked to: coffee-break.html
+=============================
+*/
+
 @font-face {
 	font-family: 'There can only be one beaver im it';
 	src: url(web-font/font.ttf);
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* CSS Reset - http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -58,27 +65,26 @@ Main code
 ===============================
 */
 
-*, *:before, *:after {
+*, *::before, *::after {
 	box-sizing: border-box;
 }
 
 body {
-	background: hsl(46, 65%, 82%);
+	background: #efe1b3;
 }
 
 .title {
 	width: 50vw;
 	height: 100vh;
+	color: #2b2020;
+	font: 100px 'Cookie', cursive;
 	display: grid;
 	justify-content: center;
 	align-content: center;
-	color: #2b2020;
-	font: 100px 'Cookie', cursive;
 }
 
 .symbol {
-	font-size: 120px;
-	font-family: 'There can only be one beaver im it';
+	font: 120px 'There can only be one beaver im it';
 }
 
 .word-coffee {
@@ -89,15 +95,23 @@ body {
 	justify-self: end;
 }
 
+.saucer, 
+.cup, 
+.border-sugar-pack,
+.middle-sugar-pack {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
 .table {
 	width: 50vw;
 	height: 100vh;
-	border: 5px solid hsl(240, 5%, 13%);
+	border: 5px solid #1f1f23;
 	border-right: hidden;
 	border-bottom: hidden;
 	border-radius: 100% 0% 100% 0% / 100% 100% 0% 0%;
 	background: #37373d;
-	/* box-shadow: 3px 0 10px #000; */
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -108,10 +122,7 @@ body {
 	height: 50vh;
 	border: 8px solid #e1c873;
 	border-radius: 50%;
-	background: rgb(221, 220, 220);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background: #dddcdc;
 	position: absolute;
 	bottom: 85px;
 	right: 150px;
@@ -124,12 +135,6 @@ body {
 	border-radius: 50%;
 	background: #2b2020;
 	box-shadow: 0 0 15px 5px #808080;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	/* position: absolute;
-	top: 38px;
-	left: 39px; */
 }
 
 .inner-shadow {
@@ -137,18 +142,15 @@ body {
 	height: 30vh;
 	border: 5px solid #bb9e3e;
 	border-radius: 50%;
-	/* position: absolute;
-	top: -2px;
-	left: -3px; */
 }
 
-.inner-bright {
+.coffee-brightness {
 	width: 12vw;
 	height: 28vh;
 	border-radius: 50%;
 	border-left-width: 9px;
 	border-style: solid;
-	border-left-color: hsl(0, 15%, 70%);
+	border-left-color: #bea7a7;
 	position: absolute;
 	top: 59px;
 	left: 62px;
@@ -157,7 +159,6 @@ body {
 .strap {
 	width: 4vw;
 	height: 5vh;
-	/* border: 1px solid #dfb016; */
 	border-left-color: transparent;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
@@ -169,10 +170,7 @@ body {
 .border-sugar-pack {
 	width: 8vw;
 	height: 14vh;
-	background: hsl(0, 0%, 90%);
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background: #e6e6e6;
 	position: absolute;
 	left: 70px;
 	bottom: 100px;
@@ -183,10 +181,7 @@ body {
 	width: 6vw;
 	height: 9vh;
 	border-radius: 5px;
-	background: linear-gradient(to right, hsl(0, 0%, 96%), hsl(0, 0%, 84%));
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	background: linear-gradient(to right, #f5f5f5, #d6d6d6);
 }
 
 .sugar-label {
@@ -206,9 +201,8 @@ body {
 	width: 4vw;
 	height: 9vh;
 	clip-path: polygon(20% 0%, 80% 0%, 100% 100%, 0% 100%);
-	/* border: 2px solid hsl(0, 1%, 56%); */
 	border-radius: 20px;
-	background: radial-gradient(rgb(221, 220, 220), hsl(0, 1%, 66%));
+	background: radial-gradient(#dddcdc, #a9a7a7);
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -218,9 +212,8 @@ body {
 .spoon-handle {
 	width: 1vw;
 	height: 22vh;
-	/* background: hsl(0, 1%, 66%); */
-	background: linear-gradient(to right, hsl(0, 1%, 66%), hsl(0, 1%, 76%), hsl(0, 1%, 66%));
-	border: 1px solid hsl(0, 1%, 56%);
+	background: linear-gradient(to right, #a9a7a7, #c2c1c1, #a9a7a7);
+	border: 1px solid #908e8e;
 	border-top: hidden;
 	border-bottom-left-radius: 15px;
 	border-bottom-right-radius: 15px;
