@@ -1,5 +1,7 @@
 # 🎨 [CSS Art](https://github.com/bugahontas/css-art) / [Piet Mondrian](https://github.com/bugahontas/css-art/tree/main/piet-mondrian) / Painting 1
 
+![Responsiveness badge](https://img.shields.io/static/v1?label=Responsive&message=Yes&color=green&style=for-the-badge)
+
 ## ✨ Preview
 
 ![Preview](screenshot/painting-1.png)

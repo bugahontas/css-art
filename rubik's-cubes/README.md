@@ -1,5 +1,7 @@
 # 🎨 [CSS Art](https://github.com/bugahontas/css-art) / Rubik's cubes
 
+![Responsiveness badge](https://img.shields.io/static/v1?label=Responsive&message=No&color=red&style=for-the-badge)
+
 ## ✨ Preview
 
 ![Preview](screenshot/cubes.png)
