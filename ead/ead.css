@@ -1,0 +1,253 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+/*
+============================
+Main code
+============================
+*/
+
+body {
+  height: 100vh;
+  background: #202124;
+  padding: 0px 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  color: #fff;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.participants {
+  height: 55vh;
+  display: grid;
+  grid-template: repeat(2, 50%) / repeat(9, 1fr);
+  gap: 10px;
+}
+
+.user {
+  background: #3c4043;
+  border-radius: 6px;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user .microphone {
+  align-self: flex-end;
+  color: #fff;
+  font-size: 15px;
+  width: 25px;
+  height: 26px;
+  border-radius: 50%;
+  background: #34373a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar, 
+.username,
+.meet-code {
+  color: #fff;
+  font-weight: 700;
+}
+
+.avatar {
+  margin: 13px 0 25px;
+  align-self: center;
+  font-size: 30px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.username {
+  font-size: 17px;
+  margin-left: 5px;
+}
+
+.user-15 .username {
+  font-size: 16px;
+}
+
+.user-1 .avatar { background: #800080; }
+.user-2 .avatar { background: #004d00; }
+.user-3 .avatar { background: #a52a2a; }
+.user-4 .avatar { background: #ab47bc; }
+.user-5 .avatar { background: #ff7f50; }
+.user-6 .avatar { background: #23a5f6; }
+.user-7 .avatar { background: #778899; }
+.user-8 .avatar { background: #ff3333; }
+.user-9 .avatar { background: #7d59c1; }
+.user-10 .avatar { background: #0c8777; }
+.user-11 .avatar { background: #af1a1a; }
+.user-12 .avatar { background: #30211d; }
+.user-13 .avatar { background: #6b9023; }
+.user-14 .avatar { background: #6666ff; }
+.user-15 .avatar { background: #ee4e18; }
+.user-16 .avatar { background: #00559a; }
+.user-17 .avatar { background: #eb4079; }
+.user-18 .avatar { background: #465a65; }
+
+.bottom {
+  width: 99%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.meet-code {
+  font-size: 15px;
+}
+
+.buttons,
+.icons {
+  color: #fff;
+  display: flex;
+}
+
+.buttons div {
+  width: 35px;
+  height: 35px;
+  margin: 0 5px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.microphone,
+.camera,
+.telephone {
+  background: #ea4335;
+}
+
+.hand,
+.arrow,
+.dots {
+  background: #3c4043;
+}
+
+.hand img {
+  width: 18px;
+  height: auto;
+}
+
+.buttons .microphone {
+  font-size: 14px;
+}
+
+.camera {
+  font-size: 16px;
+}
+
+.arrow {
+  font-size: 15px;
+}
+
+.buttons .telephone {
+  width: 47px;
+  height: 34px;
+  border-radius: 50px;
+  align-self: center;
+}
+
+.telephone img {
+  width: 23px;
+  height: auto;
+}
+
+.icons div {
+  align-self: center;
+}
+
+.icons div:not(:last-child) {
+  margin-right: 25px;
+}
+
+.people {
+  position: relative;
+}
+
+.people .total {
+  width: 17px;
+  height: 20px;
+  background: #5f6368;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -17px;
+  right: -10px;
+}
+
+.bi-infinity {
+  font-size: 15px;
+}
+
+.polygons img {
+  width: 20px;
+  height: auto;
+}
