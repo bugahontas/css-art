@@ -68,7 +68,7 @@ Main code
 body {
   height: 100vh;
   background: #202124;
-  padding: 0px 15px;
+  padding: 0 15px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
