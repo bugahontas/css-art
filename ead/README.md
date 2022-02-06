@@ -6,6 +6,16 @@
 
 ![Preview](screenshot/ead.png)
 
+## ✨ *Behind the scenes*: artwork meaning
+
+*EaD* is a Brazilian acronym for *Educação a Distância* (Distance Education or E-learning), that is, online classes. 
+
+So, this artwork is a critic about common problems faced by many students and teachers, specially during the coronavirus pandemic, like stress, pains, technical problems and loneliness. 
+
+In Brazil, the most used platform for online classes is Google Meet, in which each participant has your own avatar showing a personnal photo or simply the initial letter of your first name. 
+
+Here, the artwork reproduces a Google Meet screen where each participant is a problem, and each of them has a initial letters that, together, form the expression *Estresse a Distância* (Long-distance stress) instead of *Educação a Distância*. That's a well known and very funny pun here in Brazil! 😂           
+
 ## ✨ Source code
 
 - [HTML file](https://github.com/bugahontas/css-art/blob/main/ead/ead.html)
