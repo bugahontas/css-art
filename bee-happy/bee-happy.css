@@ -1,0 +1,440 @@
+/*
+============================
+Author: Helena Maruf
+Linked to: bee-happy.html
+============================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/*
+==============================
+Main code
+==============================
+*/
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: #f1d7a7;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+/*
+=====================
+Hive
+=====================
+*/
+
+.hive {
+	width: 200px;
+	height: 250px;
+	justify-self: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.hive .handle {
+	width: 5px;
+	height: 50px;
+	background: #000;
+}
+
+.hive .layer {
+	height: 10%;
+	border: 3px solid #000;
+	background: #f9bf01;
+}
+
+.layer-1 {
+	width: 40%;
+	border-radius: 20px 20px 0 0;
+}
+
+.middle-layer {
+	border-radius: 10px;
+	position: relative;
+}
+
+.layer-2 {
+	width: 50%;
+	top: -3px;
+}
+
+.layer-3 {
+	width: 60%;
+	top: -6px;
+}
+
+.layer-4 {
+	width: 70%;
+	top: -9px;
+}
+
+.layer-5 {
+	width: 80%;
+	top: -12px;
+}
+
+.layer-6 {
+	width: 90%;
+	top: -15px;
+}
+
+.layer-7 {
+	width: 90%;
+	top: -18px;
+}
+
+.layer-8 {
+	width: 80%;
+	top: -21px;
+}
+
+.layer-9 {
+	width: 70%;
+	top: -24px;
+}
+
+.layer-10 {
+	width: 60%;
+	top: -27px;
+}
+
+.layer-11 {
+	width: 50%;
+	top: -30px;
+}
+
+.layer-12 {
+	width: 40%;
+	top: -33px;
+	border-radius: 0 0 20px 20px;
+}
+
+.hive .hole {
+	width: 29px;
+	height: 29px;
+	background: #000;
+	border-radius: 50%;
+	position: absolute;
+	top: 110px;
+}
+
+/*
+========================
+Bee
+========================
+*/
+
+.fun {
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr 300px 1fr;
+	justify-items: center;
+}
+
+.message {
+	font: 45px 'Grandstander', cursive;
+}
+
+.msg-part-1 {
+	align-self: end;
+}
+
+.msg-highlight {
+	color: #ff0;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.bee {
+	align-self: center;
+	width: 21vw;
+	height: 35vh;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.right-antenna,
+.left-antenna {
+	width: 8px;
+	height: 40px;
+	border: 4px solid #000;
+	border-radius: 5px 5px 0 0;
+	position: absolute;
+	top: 11px;
+}
+
+.right-antenna {
+	left: 100px;
+	transform: rotate(-26deg);
+} 
+
+.left-antenna {
+	right: 100px;
+	transform: rotate(26deg);
+}
+
+.bee-body {
+	width: 43%;
+	height: 30vh;
+	background-image: linear-gradient(180deg, #ff0 55%, #ff0 60%, #000 60%, #000 65%, #ff0 65%, #ff0 70%, #000 70%, #000 75%, #ff0 75%, #ff0 80%, #000 80%, #000 85%, #ff0 85%, #ff0 90%, #000 90%, #000 95%, #ff0 95%);
+	border-radius: 70px;
+	display: flex;
+	justify-content: center;
+	align-self: flex-end;
+	position: relative;
+}
+
+.bee-face {
+	width: 69px;
+	height: 65px;
+	position: absolute;
+	top: 26px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bee-eyes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bee-eyes div {
+	width: 25px;
+	height: 25px;
+	border-radius: 50%;
+	background: transparent;
+	border: 3px solid #000;
+	border-radius: 10px 10px 0 0px;
+	border-bottom: none;
+}
+
+.cheeks {
+	display: flex;
+	justify-content: space-between;
+}
+
+.cheeks div {
+	width: 20px;
+	height: 11px;
+	background: #ffd1e9;
+	border-radius: 50%;
+}
+
+.smile {
+	width: 35px;
+	height: 25px;
+	background: #000;
+	border: 3px solid #000;
+	border-radius: 0 0 10px 10px;
+	align-self: center;
+	display: flex;
+	justify-content: center;
+	position: relative;
+}
+
+.tongue {
+	width: 20px;
+	height: 9px;
+	background: hotpink;
+	border-radius: 50%;
+	position: absolute;
+	bottom: -6px;
+}
+
+.right-wing,
+.left-wing {
+	width: 90px;
+	height: 90px;
+	border-radius: 50% 50% 0% 100% / 63% 100% 0% 37% ;
+	background: #87cefa;
+	position: absolute;
+	top: 40px;
+	z-index: -1;
+}
+
+.right-wing {
+	left: 15px;
+}
+
+.left-wing {
+	right: 15px;
+	transform: rotateY(180deg);
+}
+
+/*
+=========================
+Bear
+=========================
+*/
+
+.bear {
+	width: 50%;
+	height: 190px;
+	justify-self: center;
+	align-self: end;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	position: relative;
+}
+
+.head {
+	width: 100%;
+	height: 150px;
+	background: #ad7325;
+	border-radius: 50% 50% 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.right-ear,
+.left-ear {
+	width: 69px;
+	height: 40px;
+	background: #ad7325;
+	border-radius: 50% 50% 0 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	position: absolute;
+	top: 25px;
+}
+
+.right-ear {
+	left: 0px;
+	transform: rotate(-30deg);
+}
+
+.left-ear {
+	right: 0px;
+	transform: rotate(30deg);
+}
+
+.inner-part {
+	width: 38px;
+	height: 25px;
+	background: #ffd1e9;
+	border-radius: 50% 50% 0 0;
+}
+
+.bear-face {
+	width: 60%;
+	height: 115px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bear-eyes {
+	display: flex;
+	justify-content: space-between;
+}
+
+.bear-eyes>div {
+	width: 37px;
+	height: 37px;
+	background: #000;
+	border-radius: 50%;
+	position: relative;
+}
+
+.bright {
+	width: 10px;
+	height: 10px;
+	background: #fff;
+	border-radius: 50%;
+	position: absolute;
+	top: 5px;
+	left: 6px;
+}
+
+.bottom {
+	width: 90px;
+	height: 65px;
+	background: #ffc97e;
+	border-radius: 25px 25px 50% 50%;
+	align-self: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.nose {
+	width: 22px;
+	height: 16px;
+	background: #000;
+	border-radius: 7px 7px 50% 50%;
+}
+
+.mouth {
+	display: flex;
+}
+
+.mouth div {
+	width: 20px;
+	height: 20px;
+	border: 2px solid #000;
+	border-radius: 0 0 10px 10px;
+	border-top: none;
+}
