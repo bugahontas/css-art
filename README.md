@@ -21,7 +21,7 @@ For everyone who wants to:
 - [Artworks based on Piet Mondrian's paintings](https://github.com/bugahontas/css-art/tree/main/piet-mondrian)
 - [Bee happy!](https://github.com/bugahontas/css-art/tree/main/bee-happy)
 - [Coffee Break](https://github.com/bugahontas/css-art/tree/main/coffee-break)
-- [EaD - Oline classes, online stress](https://github.com/bugahontas/css-art/tree/main/ead) 
+- [EaD - Online classes, online stress](https://github.com/bugahontas/css-art/tree/main/ead) 
 - [Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
 - [Sweet Lemons](https://github.com/bugahontas/css-art/tree/main/sweet-lemons)
 - [Tetris snapshot-like](https://github.com/bugahontas/css-art/tree/main/tetris) 
