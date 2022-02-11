@@ -18,6 +18,7 @@ For everyone who wants to:
 
 ## ✨ Menu of contents
 
+- [A really angry (and insulted!) ghost](https://github.com/bugahontas/css-art/tree/main/angry-ghost)
 - [Artworks based on Piet Mondrian's paintings](https://github.com/bugahontas/css-art/tree/main/piet-mondrian)
 - [Bee happy!](https://github.com/bugahontas/css-art/tree/main/bee-happy)
 - [Coffee Break](https://github.com/bugahontas/css-art/tree/main/coffee-break)
