@@ -1,0 +1,187 @@
+/*
+=============================
+Author: Helena Maruf
+Linked to: juicy-orange.html
+=============================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/*
+==============================
+Main code
+==============================
+*/
+
+body {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: hsl(48, 96%, 68%);
+	overflow: hidden;
+}
+
+.orange {
+	width: 350px;
+	height: 350px;
+	border: 3px solid #fd8c1c;
+	border-radius: 50%;
+	position: relative;
+}
+
+.inner-shell {
+	width: 344px;
+	height: 344px;
+	border: 15px solid hsl(35, 100%, 65%);
+	border-radius: 50%;
+	background: radial-gradient(#f7941d 65%, #f9f5b8 65%);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.convergence-point {
+	width: 37px;
+	height: 36px;
+	border-radius: 50%;
+	background: #f9f5b8;
+	z-index: 1;
+	position: relative;
+}
+
+.seed {
+	width: 20px;
+	height: 20px;
+	background: #f9f5b8;
+	position: absolute;
+}
+
+.seed-1 {
+	border-radius: 50% 50% 100% 0% / 100% 50% 50% 0% ;
+	top: -14px;
+	right: -45px;
+	transform: rotate(23deg);
+}
+
+.seed-2 {
+	border-radius: 0% 100% 50% 50% / 0% 50% 50% 100% ;
+	bottom: -43px;
+	right: -11px;
+	transform: rotate(17deg);
+}
+
+.seed-3 {
+	border-radius: 100% 0% 50% 50% / 50% 0% 100% 50% ;
+	top: 29px;
+	left: -41px;
+	transform: rotate(23deg);
+}
+
+.seed-4 {
+	border-radius: 50% 50% 0% 100% / 50% 100% 0% 50% ;
+	top: -43px;
+	left: -12px;
+	transform: rotate(17deg);
+}
+
+.division {
+	height: 314px;
+	width: 1px;
+	border: 5px solid #f9f5b8;
+	position: absolute;
+}
+
+.horizontal {
+	left: 152px;
+	transform: rotate(90deg);
+}
+
+.diagonal-left-right {
+	left: 152px;
+	transform: rotate(-45deg);
+}
+
+.diagonal-right-left {
+	right: 152px;
+	transform: rotate(45deg);
+}
+
+.drop {
+	width: 30px;
+	height: 30px;
+	border-radius: 0% 100% 50% 50% / 0% 50% 50% 100%;
+	background: #fd8c1c;
+	position: absolute;
+	bottom: 0px;
+	right: 70px;
+	transform: rotate(45deg);
+	animation: drop 2s cubic-bezier(0,-0.04,1,.46) infinite;
+}
+
+@keyframes drop {
+	0% {
+		bottom: 0px;
+	}
+
+	50% {
+		bottom: -20px;
+	}
+
+	100% {
+		bottom: -200px;
+	}
+}
