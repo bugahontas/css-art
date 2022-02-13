@@ -8,6 +8,7 @@
 ![Preview](screenshot/juicy-orange.png)
 
 **In motion**:
+
 ![Gif](gif/juicy-orange.gif)
 
 ## ✨ Source code
