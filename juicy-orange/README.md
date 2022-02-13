@@ -7,6 +7,9 @@
 
 ![Preview](screenshot/juicy-orange.png)
 
+**In motion**:
+![Gif](gif/juicy-orange.gif)
+
 ## ✨ Source code
 
 - [HTML file](https://github.com/bugahontas/css-art/blob/main/juicy-orange/juicy-orange.html)
