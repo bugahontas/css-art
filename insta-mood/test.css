@@ -1,0 +1,206 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/*
+==============================
+Main code
+==============================
+*/
+
+body {
+	height: 100vh;
+	background: #fdd9c8;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.main-content {
+	width: 40%;
+	height: 70vh;
+	border: 1px solid #000;
+	display: grid;
+	grid-template-rows: 140px 1fr;
+	/* justify-content: center; */
+	justify-items: center;
+	align-items: center;
+}
+
+.baloon {
+	width: 100px;
+	height: 100px;
+	background: red;
+	align-self: end;
+}
+
+.insta-logo {
+	width: 200px;
+	height: 200px;
+	border: 3px solid #000;
+	border-radius: 40px;
+	background: linear-gradient(45deg, #fcb045, #fd1d1d, #833ab4);
+	/* align-self: start; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	z-index: -2;
+	/* padding: 10px; */
+}
+
+.camera {
+	width: 150px;
+	height: 150px;
+	border: 14px solid #fff;
+	border-radius: 40px;
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.button {
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border-radius: 50%;
+	/* align-self: flex-end; */
+	position: absolute;
+	top: 12px;
+	right: 12px;
+}
+
+.lens {
+	width: 77px;
+	height: 77px;
+	border: 14px solid #fff;
+	border-radius: 50%;
+}
+
+.eyes {
+	width: 200px;
+	height: 47px;
+	/* border: 1px solid #000; */
+	display: flex;
+	justify-content: space-evenly;
+	position: absolute;
+	bottom: 9px;
+}
+
+.eyes>div {
+	width: 45px;
+	height: 45px;
+	background: #000;
+	border-radius: 50%;
+	position: relative;
+}
+
+.brights {
+	width: 40px;
+	height: 20px;
+	/* border: 1px solid #fff; */
+	display: flex;
+	justify-content: space-around;
+	position: absolute;
+	top: 11px;
+	left: 2px;
+	transform: rotate(45deg);
+}
+
+.brights div {
+	background: #fff;
+	border-radius: 50%;
+}
+
+.brights .bigger {
+	width: 12px;
+	height: 12px;
+}
+
+.brights .smaller {
+	width: 6px;
+	height: 6px;
+}
+
+.mouth-area {
+	width: 200px;
+	height: 25px;
+	/* border: 1px solid blue; */
+	position: absolute;
+	bottom: -9px;
+	display: flex;
+	justify-content: center;
+}
+
+.mouth {
+	width: 35px;
+	height: 25px;
+	background: #000;
+	border-radius: 0 0 50% 50%;
+	position: relative;
+	/* border-bottom: 2px solid #fd5a2e; */
+}
+
+.chin {
+	width: 43px;
+	height: 14px;
+	background: linear-gradient(to right, #fc7033, #fd522b);
+	border: 3px solid #000;
+	border-top: transparent;
+	border-radius: 0 0 50% 50%;
+	position: absolute;
+	z-index: -1;
+	bottom: -5px;
+	left: -4px;
+}
