@@ -58,7 +58,6 @@ Main code
 
 body {
 	height: 100vh;
-	/* background: #fdd9c8; */
 	background: #f9c8cc;
 	display: flex;
 	justify-content: center;
@@ -70,9 +69,16 @@ body {
 	height: 66vh;
 	border-radius: 50%;
 	background: #f49aa2;
+	box-shadow: 0 0 20px #833ab4;
 	display: grid;
 	grid-template-rows: 140px 1fr;
 	justify-items: center;
+	animation: shadow 1.5s linear infinite alternate;
+}
+
+@keyframes shadow {
+	from { box-shadow: 0 0 20px #833ab4; }
+	to { box-shadow: 0 0 20px 3px #833ab4; }
 }
 
 .tooltip {
@@ -80,12 +86,10 @@ body {
 	height: 55px;
 	background: #ec4956;
 	border-radius: 20px;
-	/* box-shadow: 0 0 7px hsl(355, 81%, 51%); */
 	align-self: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	/* margin-bottom: 39px; */
 	position: relative;
 }
 
@@ -133,7 +137,6 @@ body {
 .highlight {
 	width: 50px;
 	height: 100px;
-	/* border: 1px solid #000; */
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -150,63 +153,40 @@ body {
 	right: -43px;
 }
 
-.highlight div {
+.highlight::before,
+.highlight::after {
+	content: "";
+}
+
+.highlight div,
+.highlight::before,
+.highlight::after {
 	width: 20px;
 	height: 8px;
 	background: #833ab4;
 	border-radius: 8px;
+	animation: highlights 3s linear infinite alternate;
 }
 
 .highlight .middle {
 	margin: 12px 0;
 }
 
-.highlight-right .top,
-.highlight-left .bottom {
-	transform: rotate(30deg);
-}
-
-.highlight-left .top,
-.highlight-right .bottom {
+.highlight-right::after,
+.highlight-left::before {
 	transform: rotate(-30deg);
 }
 
-/* .insta-logo::before,
-.insta-logo::after {
-	content: "";
-	border: 3px solid #000;
-	border-color: transparent transparent #000 transparent;
-	border-radius: 0 0 50% 50%;
-	position: absolute;
-	/* bottom: 0;
-	right: -20px;
-} */
-
-/* .insta-logo::before {
-	width: 30px;
-	height: 20px;
-	bottom: 3px;
-	right: -10px;
-	transform: rotate(-55deg);
+.highlight-right::before,
+.highlight-left::after {
+	transform: rotate(30deg);
 }
 
-.insta-logo::after {
-	width: 48px;
-	height: 30px;
-	bottom: -4px;
-	right: -21px;
-	transform: rotate(-57deg);
-} */
-
-/* .insta-logo::after {
-	content: "";
-	width: 50px;
-	height: 50px;
-	background: #000;
-	position: absolute;
-	bottom: -10px;
-	right: -10px;
-} */
+@keyframes highlights {
+	0% { background: #833ab4;}
+	50% { background: #fd1d1d; }
+	100% { background: hsl(14, 98%, 63%); }
+}
 
 .camera {
 	width: 150px;
@@ -214,24 +194,24 @@ body {
 	border: 14px solid #fff;
 	border-radius: 40px;
 	display: flex;
-	/* flex-direction: column; */
 	justify-content: center;
 	align-items: center;
 	position: relative;
 }
 
-.button {
+.camera::before {
+	content: "";
 	width: 18px;
 	height: 18px;
 	background: #fff;
 	border-radius: 50%;
-	/* align-self: flex-end; */
 	position: absolute;
 	top: 12px;
 	right: 12px;
 }
 
-.lens {
+.camera::after {
+	content: "";
 	width: 77px;
 	height: 77px;
 	border: 14px solid #fff;
@@ -241,7 +221,6 @@ body {
 .eyes {
 	width: 200px;
 	height: 47px;
-	/* border: 1px solid #000; */
 	display: flex;
 	justify-content: space-evenly;
 	position: absolute;
@@ -256,10 +235,9 @@ body {
 	position: relative;
 }
 
-.brights {
+.bright {
 	width: 40px;
 	height: 20px;
-	/* border: 1px solid #fff; */
 	display: flex;
 	justify-content: space-around;
 	position: absolute;
@@ -268,17 +246,19 @@ body {
 	transform: rotate(45deg);
 }
 
-.brights div {
+.bright::before,
+.bright::after {
+	content: "";
 	background: #fff;
 	border-radius: 50%;
 }
 
-.brights .bigger {
+.bright::before {
 	width: 12px;
 	height: 12px;
 }
 
-.brights .smaller {
+.bright::after {
 	width: 6px;
 	height: 6px;
 }
@@ -286,7 +266,6 @@ body {
 .mouth-area {
 	width: 200px;
 	height: 25px;
-	/* border: 1px solid blue; */
 	position: absolute;
 	bottom: -9px;
 	display: flex;
@@ -299,10 +278,10 @@ body {
 	background: #000;
 	border-radius: 0 0 50% 50%;
 	position: relative;
-	/* border-bottom: 2px solid #fd5a2e; */
 }
 
-.chin {
+.mouth::after {
+	content: "";
 	width: 45px;
 	height: 14px;
 	background: linear-gradient(to right, #fc7033, #fd522b);
