@@ -1,15 +1,15 @@
-# 🎨 [CSS Art](https://github.com/bugahontas/css-art) / Juicy orange
+# 🎨 [CSS Art](https://github.com/bugahontas/css-art) / Insta mood
 
 ![Responsiveness badge](https://img.shields.io/static/v1?label=Responsive&message=No&color=red&style=for-the-badge)
 ![Animation badge](https://img.shields.io/static/v1?label=Animation&message=Yes&color=orange&style=for-the-badge)
 
 ## ✨ Preview
 
-![Preview](screenshot/juicy-orange.png)
+![Preview](screenshot/insta-mood.png)
 
 **In motion**:
 
-![Gif](gif/juicy-orange.gif)
+![Gif](gif/insta-mood.gif)
 
 ## ✨ Source code
 
