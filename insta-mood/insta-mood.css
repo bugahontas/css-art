@@ -1,3 +1,10 @@
+/*
+===========================
+Author: Helena Maruf
+Linked to: insta-mood.html
+===========================
+*/
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -23,7 +30,9 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -69,16 +78,9 @@ body {
 	height: 66vh;
 	border-radius: 50%;
 	background: #f49aa2;
-	box-shadow: 0 0 20px #833ab4;
 	display: grid;
 	grid-template-rows: 140px 1fr;
 	justify-items: center;
-	animation: shadow 1.5s linear infinite alternate;
-}
-
-@keyframes shadow {
-	from { box-shadow: 0 0 20px #833ab4; }
-	to { box-shadow: 0 0 20px 3px #833ab4; }
 }
 
 .tooltip {
@@ -91,6 +93,7 @@ body {
 	justify-content: center;
 	align-items: center;
 	position: relative;
+	animation: tooltip 2s infinite alternate;
 }
 
 .tooltip::after {
@@ -101,6 +104,11 @@ body {
 	border-width: 12px;
 	border-style: solid;
 	border-color: #ec4956 transparent transparent transparent;
+}
+
+@keyframes tooltip {
+	from { opacity: 0; bottom: -15px;}
+	to { opacity: 1; bottom: 0;}
 }
 
 .tooltip .bi {
@@ -114,7 +122,7 @@ body {
 
 .bi::after {
 	content: "99";
-	font-size: 16px;
+	font: 16px Helvetica, Arial, sans-serif;
 	font-weight: 700;
 	margin-left: 3px;
 }
@@ -129,9 +137,14 @@ body {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	transform: rotate(10deg);
 	position: relative;
 	z-index: 1;
+	animation: logo 1.5s infinite alternate;
+}
+
+@keyframes logo {
+	from { transform: rotate(0deg); }
+	to { transform: rotate(8deg); }
 }
 
 .highlight {
