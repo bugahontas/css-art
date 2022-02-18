@@ -13,8 +13,8 @@
 
 ## ✨ Source code
 
-- [HTML file](https://github.com/bugahontas/css-art/blob/main/juicy-orange/juicy-orange.html)
-- [CSS file](https://github.com/bugahontas/css-art/blob/main/juicy-orange/juicy-orange.css)
+- [HTML file](https://github.com/bugahontas/css-art/blob/main/insta-mood/insta-mood.html)
+- [CSS file](https://github.com/bugahontas/css-art/blob/main/insta-mood/insta-mood.css)
 
 **Wanna the source code on your machine?** You have two options:
 - Fork and clone this repository to your local machine (but **I'm not accepting PRs in this repo**, so please keep any changes in your machine)
