@@ -23,6 +23,7 @@ For everyone who wants to:
 - [Bee happy!](https://github.com/bugahontas/css-art/tree/main/bee-happy)
 - [Coffee Break](https://github.com/bugahontas/css-art/tree/main/coffee-break)
 - [EaD - Online classes, online stress](https://github.com/bugahontas/css-art/tree/main/ead)
+- [Insta mood](https://github.com/bugahontas/css-art/tree/main/insta-mood)
 - [Juicy orange](https://github.com/bugahontas/css-art/tree/main/juicy-orange) 
 - [Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
 - [Sweet Lemons](https://github.com/bugahontas/css-art/tree/main/sweet-lemons)
