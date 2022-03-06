@@ -1,0 +1,228 @@
+@font-face {
+	font-family: bergamot;
+	src: url(bergamot.ttf);
+}
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+/*
+==========================
+Main code
+==========================
+*/
+
+:root {
+	--black: #121212;
+	--brown: #b06a45;
+	--light-brown: #d09d67;
+	font-size: 20px;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	background: #b5fcdb;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.wrapper {
+	width: 25vmax;
+	height: 25vmax;
+	min-width: 160px;
+	min-height: 160px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+.bear {
+	margin-bottom: 3vmax;
+	width: 60%;
+	height: 60%;
+	background: var(--brown);
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ears div {
+	width: 40%;
+	height: 40%;
+	background: var(--brown);
+	position: absolute;
+	top: -22%;
+	z-index: -1;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.ears .right {
+	left: -22%;
+}
+
+.ears .left {
+	right: -22%;
+}
+
+.ears .right:before,
+.ears .left:before {
+	content: "";
+	width: 50%;
+	height: 50%;
+	background: var(--light-brown);
+	position: absolute;
+}
+
+.face {
+	width: 70%;
+	height: 70%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.eyes {
+	width: 100%;
+	height: 42%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.eyes:before,
+.eyes:after {
+	content: "";
+	width: 15%;
+	height: 100%;
+	background: var(--black);
+}
+
+.muzzle {
+	width: 50%;
+	height: 44%;
+	background: var(--light-brown);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	position: relative;
+}
+
+.muzzle:before {
+	content: "";
+	width: 25%;
+	height: 25%;
+	background: var(--black);
+}
+
+.binding-nose-mouth {
+	height: 55%; 
+	border: 1px solid var(--black);	
+}
+
+.muzzle:after {
+	content: "";
+	width: 40%;
+	height: 20%;
+	border: 2px solid var(--black);
+	border-top: none;
+	position: absolute;
+	bottom: 18%;
+}
+
+.message {
+	width: 100%;
+	font: 20px 'Sniglet', cursive;
+	text-align: center;
+	position: absolute;
+	bottom: -15%;
+	opacity: 0;
+	animation: up 1s forwards;
+}
+
+@keyframes up {
+	to { bottom: 0; opacity: 1;}
+}
+
+.cubic {
+	display: inline-block;
+	width: 15%;
+	text-align: center;
+	background: transparent;
+	opacity: 0;
+	animation: cubic-letter 1s forwards 1s,  cubic-background 1s forwards 2s;
+}
+
+@keyframes cubic-letter {
+	to { opacity: 1; }
+}
+
+@keyframes cubic-background {
+	to { background: #d09d67; }
+}
+
+@media screen and (min-width: 426px) {
+	.message {
+		font-size: 3vmax;
+	}
+
+	.cubic {
+		width: 4.5vmax;
+	}
+}
