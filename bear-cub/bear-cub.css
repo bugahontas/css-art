@@ -91,7 +91,7 @@ body {
 }
 
 .bear {
-	margin-bottom: 3vmax;
+	margin-bottom: 2vmax;
 	width: 60%;
 	height: 60%;
 	background: var(--brown);
@@ -154,6 +154,18 @@ body {
 	background: var(--black);
 }
 
+.eyes:after {
+	animation: wink .8s linear alternate .5s;
+}
+
+@keyframes wink {
+	0% {height: 100%; align-self: center;}
+	25% {height: 50%; align-self: center;}
+	50% {height: 0%; align-self: center;}
+	75% {height: 50%; align-self: center;}
+	100% {height: 100%; align-self: center;}
+}
+
 .muzzle {
 	width: 50%;
 	height: 44%;
@@ -188,41 +200,31 @@ body {
 
 .message {
 	width: 100%;
-	font: 20px 'Sniglet', cursive;
+	font: 3.5vmax 'Sniglet', sans-serif;
 	text-align: center;
 	position: absolute;
 	bottom: -15%;
 	opacity: 0;
-	animation: up 1s forwards;
+	animation: up 1s forwards 1s;
 }
 
 @keyframes up {
-	to { bottom: 0; opacity: 1;}
+	to {bottom: 0; opacity: 1;}
 }
 
 .cubic {
 	display: inline-block;
-	width: 15%;
+	padding: 0 1vmax;
 	text-align: center;
 	background: transparent;
 	opacity: 0;
-	animation: cubic-letter 1s forwards 1s,  cubic-background 1s forwards 2s;
+	animation: cubic-letter 1s forwards 2s,  cubic-background 1s forwards 3s;
 }
 
 @keyframes cubic-letter {
-	to { opacity: 1; }
+	to {opacity: 1;}
 }
 
 @keyframes cubic-background {
-	to { background: #d09d67; }
-}
-
-@media screen and (min-width: 426px) {
-	.message {
-		font-size: 3vmax;
-	}
-
-	.cubic {
-		width: 4.5vmax;
-	}
+	to {background: var(--brown);}
 }
