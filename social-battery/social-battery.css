@@ -60,94 +60,71 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background: #292929;
-	display: grid;
-	place-items: center center;
 	font-family: 'Do Hyeon', sans-serif;
 	color: #fff;
+	display: grid;
+	place-items: center center;
 }
 
 .wrapper {
-	width: 80%;
-	height: 85%;
-	/* border: 1px solid #fff; */
+	width: 90%;
+	max-width: 800px;
+	height: 90%;
 	display: grid;
-	align-items: center;
-	grid-template-rows: 70px repeat(4, 1fr);
+	grid-template-rows: 12% 1fr 12%;
+	place-items: center center;
 }
 
-.title {
-	color: #fff;
-	justify-self: center;
-	font-size: 11vw;
+.message-1,
+.message-2 {
+	font-size: 11vmin;
 }
 
-.item {
-	width: 100%;
-	height: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
+.message-1 {
+	align-self: start;
+}
+
+.message-2 {
+	align-self: end;
 }
 
 .battery {
-	width: 50%;
-	min-width: 141px;
-	height: 92%;
-	border: 4px solid #fff;
+	width: 22vmax;
+	max-width: 144px;
+	height: 35vmax;
+	max-height: 259px;
+	border: 5px solid #fff;
 	border-radius: 15px;
 	position: relative;
 	display: flex;
+	flex-direction: column;
 	gap: 5px;
-	padding: 2%;
-}
-
-.status {
-	font-size: 8vw;
-}
-
-.status-centered {
-	position: absolute;
-	right: 20%;
-}
-
-.battery:after {
-	content: "";
-	width: 7%;
-	height: 35%;
-	background: #fff;
-	border-radius: 0 4px 4px 0;
-	position: absolute;
-	right: -4%;
-	top: 50%;
-	transform: translate(50%, -50%);
+	padding: 5px;
 }
 
 .battery div {
 	flex-basis: 25%;
+	background: #38af48;
 }
 
-.battery .round:first-child {
+.battery div:first-child {
 	border-top-left-radius: 7px;
-	border-bottom-left-radius: 7px;
-}
-
-.battery-1 div {
-	background: #d12e32;
-}
-
-.battery-2 div {
-	background: #ffe743;
-}
-
-.battery-3 div {
-	background: #c0d75f;
-}
-
-.battery-4 div {
-	background: #2cb463;
-}
-
-.battery-4 .round:last-child {
 	border-top-right-radius: 7px;
+}
+
+.battery div:last-child {
+	border-bottom-left-radius: 7px;
 	border-bottom-right-radius: 7px;
+}
+
+.battery:before {
+	content: "";
+	width: 30%;
+	height: 7%;
+	background: #fff;
+	border-radius: 5px 5px 0 0;
+	position: absolute;
+	top: -4%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
