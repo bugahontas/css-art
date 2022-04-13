@@ -26,6 +26,7 @@ For everyone who wants to:
 - [Insta mood](https://github.com/bugahontas/css-art/tree/main/insta-mood)
 - [Juicy orange](https://github.com/bugahontas/css-art/tree/main/juicy-orange) 
 - [Rubik's cubes](https://github.com/bugahontas/css-art/tree/main/rubik's-cubes)
+- [Social battery included](https://github.com/bugahontas/css-art/tree/main/social-battery)
 - [Sweet Lemons](https://github.com/bugahontas/css-art/tree/main/sweet-lemons)
 - [Tetris snapshot-like](https://github.com/bugahontas/css-art/tree/main/tetris) 
 
