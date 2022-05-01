@@ -1,0 +1,163 @@
+/* OBSERVAÇÕES:
+
+COR DE FUNDO - OPÇÕES:
+  /* background: #ea8d8b;
+  /* background: #fdafab;
+  /* background: hsl(0, 100%, 70%);
+
+.card BORDER-RADIUS - OPÇÕES:
+  @media:
+    /* mobile: 5%
+    /* demais: 20px
+  /* TODOS: 20px
+
+.card PADDING - OPÇÕES:
+  @media
+    /* mobile: 20px
+    /* demais: 2%
+  /* TODOS: 20px
+
+.tooltip:after TAMANHO - OPÇÕES:
+  @media
+    /* mobile: margin -16px, width 16px
+    /* demais: margin -20px, width 20px 
+  /* TODOS: 16px
+
+*/
+
+:root {
+  --red-pastel: hsl(0, 100%, 74%);
+  --red-darker: hsl(0, 100%, 50%);
+  font: 400 16px 'Righteous', cursive;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--red-pastel);
+  display: grid;
+  place-items: center center;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.flex-row {
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  width: 50vmax;
+  height: 50vmax;
+  background: #fff;
+  border-radius: 20px;
+  padding: 20px;
+  /* flex-direction: column; */
+  /* align-items: center; */
+}
+
+.error {
+  width: 90%;
+  height: 60%;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+
+.description {
+  width: 90%;
+  height: 40%;
+  border: 1px solid #000;
+}
+
+.tooltip {
+  width: 80%;
+  max-width: 400px;
+  height: 40%;
+  border: 5px solid var(--red-pastel);
+  border-radius: 20px 0 20px 0;
+  position: relative;
+}
+
+.tooltip:after {
+  content: '';
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -16px;
+  border-width: 16px;
+  border-style: solid;
+  border-color: var(--red-pastel) transparent transparent transparent;
+}
+
+.tooltip-text {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  color: var(--red-darker);
+}
+
+.error-type {
+  width: 100%;
+  height: 50%;
+  border: 1px solid #000;
+}
+
+.error-number {
+  font-size: 50px; /* VALOR TEMPORÁRIO */
+  color: var(--red-darker);
+}
+
+.ladybug {
+  width: 8vmax;
+  height: 8vmax;
+  max-width: 80px;
+  max-height: 80px;
+  border: 1px solid #000;
+  position: relative;
+  z-index: 1;
+}
+
+.ladybug:before {
+  content: '';
+  width: 30%;
+  height: 20%;
+  background: #000;
+  border-radius: 50% 50% 0 0;
+  position: absolute;
+  top: 0;
+  z-index: 2;
+}
+
+.lb-body {
+  width: 80%;
+  height: 80%;
+  background: var(--red-darker);
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+}
+
+
+@media screen and (min-width: 800px) {
+  .card {
+    width: 50%;
+    height: 70%;
+  }
+
+  .tooltip-text {
+    font-size: 2.5rem;
+  }
+
+  .error-number {
+    font-size: 4.5rem;
+  }
+  
+}
