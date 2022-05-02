@@ -47,3 +47,8 @@ table {
 }
 
 *, *:before, *:after { box-sizing: border-box; }
+
+/* button {
+	border: none;
+	background: transparent;
+} */
