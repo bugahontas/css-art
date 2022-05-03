@@ -1,30 +1,3 @@
-/* OBSERVAÇÕES:
-
-COR DE FUNDO - OPÇÕES:
-  /* background: #ea8d8b;
-  /* background: #fdafab;
-  /* background: hsl(0, 100%, 70%);
-
-.card BORDER-RADIUS - OPÇÕES:
-  @media:
-    /* mobile: 5%
-    /* demais: 20px
-  /* TODOS: 20px
-
-.card PADDING - OPÇÕES:
-  @media
-    /* mobile: 20px
-    /* demais: 2%
-  /* TODOS: 20px
-
-.tooltip:after TAMANHO - OPÇÕES:
-  @media
-    /* mobile: margin -16px, width 16px
-    /* demais: margin -20px, width 20px 
-  /* TODOS: 16px
-
-*/
-
 :root {
   --red-pastel: hsl(0, 100%, 74%);
   --red-pastel-light: hsl(0, 100%, 90%);
@@ -62,15 +35,12 @@ body {
   background: #fff;
   border-radius: 20px;
   padding: 20px;
-  /* flex-direction: column; */
-  /* align-items: center; */
+  animation: show-card 1s linear;
 }
 
 .error {
   width: 90%;
   height: 60%;
-  /* border: 1px solid #000; */
-  /* margin-bottom: 20px; */
 }
 
 .description {
@@ -204,6 +174,17 @@ body {
   padding: 4%;
   border-radius: 6px;
   cursor: pointer;
+  animation: btn-background 2s infinite alternate; 
+}
+
+@keyframes show-card {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes btn-background {
+  from { background: var(--red-pastel-light); }
+  to { background: var(--red-pastel); }
 }
 
 @media screen and (min-width: 640px) {
